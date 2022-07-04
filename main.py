@@ -16,7 +16,7 @@ class Serie():
         return self.titulo
 
     def get_numero_temporadas(self):
-        return self.numero_temporadas
+        return self.__numero_temporadas
 
     def get_genero(self):
         return self.genero
@@ -45,7 +45,7 @@ class Serie():
 
 class Videojuego():
     titulo = ''
-    horas_estimadas = 10
+    __horas_estimadas = 10
     entregado = False
     genero = ''
     compañia = ''
@@ -61,7 +61,7 @@ class Videojuego():
         return self.titulo
 
     def get_horas_estimadas(self):
-        return self.horas_estimadas
+        return self.__horas_estimadas
 
     def get_genero(self):
         return self.genero
@@ -89,7 +89,7 @@ serie1 = Serie('naruto', 'Anime', 'nakamoto')
 juego1 = Videojuego('Final Fantasy IV', 'Open World', 'Nintendo')
 
 
-print(serie1.get_creador())
+print(serie1.get_numero_temporadas())
 serie1.set_creador('Manolo Escobar')
 print(serie1.get_creador())
 print(serie1.entregar())
